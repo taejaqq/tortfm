@@ -9,6 +9,14 @@ $maincolor: #FF7B1C;
         transform: scale(1.15);
     }
 }
+@mixin header-svg{
+    cursor: pointer;
+    fill: white;
+    transition: all 0.3s ease;
+    &:hover { 
+        fill: $maincolor;
+    }
+}
 
 .side-player{
     position: fixed;
@@ -25,10 +33,33 @@ $maincolor: #FF7B1C;
     }
     .side-player__tracks{
         @include player-svg;
-        margin-top: 40px;
+        margin-top: 82px;
+    }
+    .side-player__play{
+        @include player-svg;
+        margin-top: 100px;
+    }
+    .side-player__volume{
+        height: 321px;
+        width: 0px;
+        display: flex;
+        justify-content: center;
+        border: 1px solid #000000;
+        margin-top: 25px;
+        .side-player__runner{
+            height: 34px;
+            border: 5px solid #000000;
+            margin-top: 29px;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            &:hover{
+                border: 5px solid white;
+                transform: scale(1.1);
+            }
+        }
     }
 }
-.menu {
+.header {
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -39,6 +70,10 @@ $maincolor: #FF7B1C;
     z-index: 1;
     position: absolute;
     right: 0;
+    .header__button {
+        @include header-svg;
+        margin-top: 36px;
+    }
 }
 .section{
     position: relative;
