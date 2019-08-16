@@ -59,7 +59,7 @@ $maincolor: #FF7B1C;
         }
     }
 }
-.header {
+.header{
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -70,9 +70,23 @@ $maincolor: #FF7B1C;
     z-index: 1;
     position: absolute;
     right: 0;
-    .header__button {
+    .header__button{
         @include header-svg;
         margin-top: 36px;
+    }
+    nav{
+        .nav__list{
+            display: flex;
+            flex-direction: column;
+            .nav__item{
+                .nav__link{
+                    text-decoration: none;
+                    svg{
+                        @include header-svg
+                    }
+                }
+            }
+        }
     }
 }
 .section{
