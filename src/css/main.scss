@@ -1,5 +1,15 @@
 $maincolor: #FF7B1C;
 
+@mixin player-svg{
+    cursor: pointer;
+    fill: black;
+    transition: all 0.3s ease;
+    &:hover { 
+        fill: white;
+        transform: scale(1.15);
+    }
+}
+
 .side-player{
     position: fixed;
     display: flex;
@@ -10,11 +20,14 @@ $maincolor: #FF7B1C;
     background: $maincolor;
     z-index: 1;
     .side-player__icon{
+        @include player-svg;
+        margin-top: 40px;
+    }
+    .side-player__tracks{
+        @include player-svg;
         margin-top: 40px;
     }
 }
-
-
 .menu {
     position: fixed;
     display: flex;
