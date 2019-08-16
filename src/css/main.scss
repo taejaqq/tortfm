@@ -42,10 +42,12 @@ $maincolor: #FF7B1C;
     .side-player__volume{
         height: 321px;
         width: 0px;
+        position: relative;
         display: flex;
         justify-content: center;
         border: 1px solid #000000;
         margin-top: 25px;
+        right: 3px;
         .side-player__runner{
             height: 34px;
             border: 5px solid #000000;
@@ -75,10 +77,17 @@ $maincolor: #FF7B1C;
         margin-top: 36px;
     }
     nav{
+        margin-top: 83px;
         .nav__list{
             display: flex;
             flex-direction: column;
             .nav__item{
+                margin-top: 102px;
+                list-style-type: none;
+                width: 25px;
+                &:nth-child(1){
+                    margin-top: 0px;
+                }
                 .nav__link{
                     text-decoration: none;
                     svg{
