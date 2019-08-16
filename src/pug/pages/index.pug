@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+        link(rel="stylesheet", href="./libs/fullpage.css")
+        link(rel="stylesheet", href="css/main.css")
+        
+    body
+        aside.side-player
+            object.side-player__icon(type='image/svg+xml', data='svg/music.svg')
+        nav.menu
+        main#fullpage
+            section.section
+            section.section
+                .slide(data-anchor='slide1')
+                .slide(data-anchor='slide2')
+            section.section
+            section.section
+
+    script(src='./libs/jquery.js')
+    script(src='./libs/fullpage.js')
+    script(src='./js/main.js')

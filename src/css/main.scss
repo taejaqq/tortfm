@@ -1,0 +1,36 @@
+$maincolor: #FF7B1C;
+
+.side-player{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 969px;
+    width: 101px;
+    background: $maincolor;
+    z-index: 1;
+    .side-player__icon{
+        margin-top: 40px;
+    }
+}
+
+
+.menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 969px;
+    width: 101px;
+    background:#282828;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+}
+.section{
+    position: relative;
+    width: 1920px;
+    height: 960px;
+    background: #171717;
+    mix-blend-mode: normal;
+}
