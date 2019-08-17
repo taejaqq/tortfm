@@ -16,6 +16,7 @@ const notify = require("gulp-notify");
 sass.compiler = require('node-sass');
  
 const scssFiles = [
+    './src/css/fonts.scss',
     './src/css/main.scss',
     './src/css/media.scss'
 ]
